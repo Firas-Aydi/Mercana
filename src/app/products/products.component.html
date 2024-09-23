@@ -1,0 +1,35 @@
+<!-- product-list.component.html -->
+
+<br />
+<h2
+  style="
+    text-align: center;
+    font-family: 'Lucida Handwriting';
+    background-color: rgba(255, 215, 0, 0.1);
+    color: gold;
+    border: 2px solid gold;
+    padding: 5px 70px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+  "
+>
+  {{ subCatName }}
+</h2>
+
+<div class="product-list">
+  <div class="product-card" *ngFor="let product of productDataArray">
+    <div class="product-info">
+      <img [src]="product.image" alt="{{ product.nom }}" />
+      <p>{{ product.nom }} - {{ product.prix }} DT</p>
+    </div>
+  </div>
+  <div class="product-card" *ngFor="let product of productDataArray">
+    <div class="product-info">
+      <img [src]="product.image" alt="{{ product.nom }}" />
+      <p>{{ product.nom }} - {{ product.prix }} DT</p>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,160 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background-image: url("assets/background2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  margin: 0; /* Ajustez la marge si nécessaire */
+}
+.welcome-banner {
+  height: 97%; /* Utilisez la hauteur de la vue pour centrer verticalement */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: gold; /* Couleur du texte */
+  text-align: center;
+}
+
+.welcome-text {
+  font-size: 300%;
+  font-family: /* "Lucida Handwriting", */ "Brush Script MT", "Segoe Script";
+  /* margin-top: 7%; */
+}
+
+.logo-image {
+  max-width: 70%; /* Ajustez la largeur maximale selon vos besoins */
+  margin: 30%;
+}
+.view-menu-button {
+  font-family: "Lucida Handwriting", "Brush Script MT", "Segoe Script";
+  background-color: rgba(255, 215, 0, 0.1);
+  color: gold;
+  border: 2px solid gold;
+  padding: 10px 70px;
+  font-size: 16px;
+  cursor: pointer;
+  /* margin-top: 10px; */
+  border-radius: 16px;
+  transition: background-color 0.3s ease; /* Ajoute une transition pour un effet de survol */
+}
+.view-menu-button:hover {
+  background-color: gold;
+}
+/* categorie.component.css */
+
+.category-list {
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+  margin: 10px;
+}
+
+.category-card {
+  box-sizing: border-box;
+  /* padding: 2px; */
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.category-card img {
+  width: 100px;
+  height: 75px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.category-card p {
+  font-family: "Lucida Handwriting";
+  width: 100px;
+  color: gold;
+  margin-top: -10px;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.sub-category-card img {
+  width: 100px;
+  height: 140px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.sub-category-card {
+  box-sizing: border-box;
+  padding: 5%;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  /* margin: 10px; */
+}
+/* .sub-category-list {
+  margin: auto;
+} */
+
+.sub-category-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-category-card p {
+  width: 100px;
+  color: gold;
+  margin-top: -10px;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+/* products.component.css */
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 20px;
+}
+
+.product-card {
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid gold;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  transition: transform 0.3s ease; 
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  width: 100px;
+  height: 140px;
+  border-radius: 10px;
+  /* border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px; */
+}
+
+.product-card p {
+  color: gold;
+  margin-top: 10px;
+}
+.product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-info p{
+  color: gold;
+  margin-top: 10px;
+}

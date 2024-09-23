@@ -3,23 +3,29 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "node --openssl-legacy-provider ./node_modules/@angular/cli/bin/ng serve",
+    "build": "node --openssl-legacy-provider ./node_modules/@angular/cli/bin/ng build --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "~12.2.0",
+    "@angular/cdk": "^12.2.13",
     "@angular/common": "~12.2.0",
     "@angular/compiler": "~12.2.0",
     "@angular/core": "~12.2.0",
+    "@angular/fire": "^6.0.3",
     "@angular/forms": "~12.2.0",
+    "@angular/material": "^12.2.13",
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
+    "@ngmodule/material-carousel": "^0.6.0",
+    "firebase": "^7.24.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
+    "webpack": "^5.94.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {

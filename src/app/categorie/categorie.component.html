@@ -1,0 +1,39 @@
+<!-- categorie.component.html -->
+<br />
+<h2 style="color: gold; margin: 20px">Catégories</h2>
+<div class="category-list">
+  <div class="category-card" *ngFor="let category of categorieDataArray" (click)="selectCategory(category)" >
+    <img [src]="category.image" alt="{{ category.nom }}" />
+    <p>{{ category.nom }}</p>
+  </div>
+  <div class="category-card" *ngFor="let category of categorieDataArray" (click)="selectCategory(category)" >
+    <img [src]="category.image" alt="{{ category.nom }}" />
+    <p>{{ category.nom }}</p>
+  </div>
+  <div class="category-card" *ngFor="let category of categorieDataArray" (click)="selectCategory(category)" >
+    <img [src]="category.image" alt="{{ category.nom }}" />
+    <p>{{ category.nom }}</p>
+  </div>
+</div>
+
+<div class="sub-category-list" *ngIf="selectedCategory">
+  <h3 style="color: gold; margin: 20px"> Sous-catégories de {{ selectedCategory.nom }} </h3>
+  <div class="sub-category-row" *ngFor="let subCategoryGroup of getSubCategoryGroups()" >
+    <div class="sub-category-card" *ngFor="let subCategory of subCategoryGroup" (click)="selectSubCategory(subCategory)">
+      <img [src]="subCategory.image" alt="{{ subCategory.nom }}" />
+      <p>{{ subCategory.nom }}</p>
+    </div>
+  </div>
+  <div class="sub-category-row" *ngFor="let subCategoryGroup of getSubCategoryGroups()" >
+    <div class="sub-category-card" *ngFor="let subCategory of subCategoryGroup" (click)="selectSubCategory(subCategory)">
+      <img [src]="subCategory.image" alt="{{ subCategory.nom }}" />
+      <p>{{ subCategory.nom }}</p>
+    </div>
+  </div>
+  <div class="sub-category-row" *ngFor="let subCategoryGroup of getSubCategoryGroups()" >
+    <div class="sub-category-card" *ngFor="let subCategory of subCategoryGroup" (click)="selectSubCategory(subCategory)">
+      <img [src]="subCategory.image" alt="{{ subCategory.nom }}" />
+      <p>{{ subCategory.nom }}</p>
+    </div>
+  </div>
+</div>
